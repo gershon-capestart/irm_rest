@@ -17,6 +17,8 @@ public class Workspace {
     private int bookedRow;
     private int bookedColumn;
     private int floorId;
+    private String dinner;
+    private String snacks;
 
     public static Workspace convertObjToWorkspace(Object[] row) {
         return Workspace.builder()
@@ -30,6 +32,8 @@ public class Workspace {
                 .bookedRow(QueryUtils.convertObjToInteger(row[7]))
                 .bookedColumn(QueryUtils.convertObjToInteger(row[8]))
                 .floorId(QueryUtils.convertObjToInteger(row[9]))
+                .dinner(QueryUtils.convertObjToString(row[10]))
+                .snacks(QueryUtils.convertObjToString(row[11]))
                 .build();
     }
 

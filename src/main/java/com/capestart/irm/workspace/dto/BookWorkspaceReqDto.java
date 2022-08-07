@@ -12,6 +12,8 @@ public class BookWorkspaceReqDto {
     private String shift;
     private int row;
     private int column;
+    private boolean dinner;
+    private boolean snacks;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date bookingDate;

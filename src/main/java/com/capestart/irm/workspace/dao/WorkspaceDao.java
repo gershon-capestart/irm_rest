@@ -30,6 +30,8 @@ public class WorkspaceDao {
                 .setParameter("shift", dto.getShift())
                 .setParameter("row", dto.getRow())
                 .setParameter("column", dto.getColumn())
+                .setParameter("dinner", dto.isDinner())
+                .setParameter("snacks", dto.isSnacks())
                 .executeUpdate();
     }
 
